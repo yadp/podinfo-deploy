@@ -8,10 +8,10 @@ spec:
   type: LoadBalancer
   ports:
     - port: 80
-      targetPort: 9898
+      targetPort: 3000
       protocol: TCP
       name: http
   selector:
-    app: podinfo
+    app: metrics
 
 
